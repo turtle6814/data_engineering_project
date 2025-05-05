@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# 📊 Data Lakehouse Pipeline with MinIO, Pandas & Superset
 
 This project implements a comprehensive, production-ready data engineering pipeline that transforms Brazilian e-commerce data into actionable business intelligence. Built with industry-standard practices and modern cloud-native technologies, the system demonstrates a complete data lifecycle from ingestion to visualization.
 
