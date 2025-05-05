@@ -6,7 +6,7 @@ The project implements a comprehensive, production-ready data engineering pipeli
 
 This project applies knowledge from AIDE's "Basic Data Engineering" course. Sincere thanks to Mr. Nguyen Thanh Binh and Mr. Hung Le for their guidance.
 
-![Architecture Overview](structure.png)
+![Architecture Overview](demo/structure.png)
 
 ## Built With
 
