@@ -2,14 +2,26 @@
 
 # 📊 Data Lakehouse Pipeline with MinIO, Pandas & Superset
 
-This project implements a comprehensive, production-ready data engineering pipeline that transforms Brazilian e-commerce data into actionable business intelligence. Built with industry-standard practices and modern cloud-native technologies, the system demonstrates a complete data lifecycle from ingestion to visualization.
+The project implements a comprehensive, production-ready data engineering pipeline that transforms Brazilian e-commerce data into actionable business intelligence. Built with industry-standard practices and modern technologies, the system demonstrates a complete data lifecycle from ingestion to visualization.
+
+This project applies knowledge from AIDE's "Basic Data Engineering" course. Sincere thanks to Mr. Nguyen Thanh Binh and Mr. Hung Le for their guidance.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- **[Docker](https://www.docker.com/)** - Containerizes each component of the pipeline, ensuring consistent environments and easy deployment.
+
+- **[Dagster](https://dagster.io/)** - Orchestrates and schedules the end-to-end ETL workflows, from extraction through to loading.
+
+- **[Pandas](https://pandas.pydata.org/)** - Handles in-memory data cleaning and transformation between the Bronze and Silver layers.
+
+- **[MinIO](https://min.io/)** - Provides an S3-compatible object store for archiving raw and intermediate datasets.
+
+- **[MySQL](https://www.mysql.com/)** - acts as the staging database where raw CSV data is first ingested.
+
+- **[PostgreSQL](https://www.postgresql.org/)** - Serves as the Gold-layer data warehouse optimized for analytical queries.
+
+- **[Apache Superset](https://superset.apache.org/)** - Offers an interactive BI interface for building dashboards and visualizing the Gold-layer data.
 
 ## Live Demo 
 
