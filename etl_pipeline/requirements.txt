@@ -1,0 +1,10 @@
+dagster
+dagit
+dagster-postgres
+pandas
+cryptography
+pymysql
+minio
+fastparquet
+pyarrow
+psycopg2-binary

@@ -1,0 +1,5 @@
+.venv/
+minio/
+mysql/
+postgresql/
+superset_home/
