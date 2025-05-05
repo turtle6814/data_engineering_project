@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Description the project.
+This project implements a comprehensive, production-ready data engineering pipeline that transforms Brazilian e-commerce data into actionable business intelligence. Built with industry-standard practices and modern cloud-native technologies, the system demonstrates a complete data lifecycle from ingestion to visualization.
 
 
 ## Built With
