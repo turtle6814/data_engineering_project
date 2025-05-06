@@ -38,16 +38,32 @@ in progess :smile:
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- **Python 3.9+**  
+- **Anaconda or Miniconda** for managing environments
 ### Setup
 
-### Install
+# Clone repo and navigate to project directory
+   ```bash  
+   git clone <repository-url>  
+   cd <project-folder>
+   ```
+# Create and activate a new Anaconda environment:
+   ```bash
+   conda create -n pyenv python=3.9+
+   conda activate pyenv
+   ```
+# Build required Docker images
+  ```bash
+    docker build -t de_dagster ./dagster/
+    docker build -t etl_pipeline:latest ./etl_pipeline
+  ```
+# Start all services
+  ```bash
+    docker-compose up -d
+  ```
 
 ### Usage
 
-### Run tests
-
-### Deployment
 
 
 
