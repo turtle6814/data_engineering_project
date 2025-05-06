@@ -31,11 +31,6 @@ in progess :smile:
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 - **Python 3.9+**  
@@ -63,11 +58,23 @@ To get a local copy up and running follow these simple example steps.
   ```
 
 ### Usage
-1. Load csv files to MySQL
-2. Perform orchestration using Dagster
-3. Transform the data using Pandas
-4. Transformed data will be store in MinIO
-![Storage](demo/monthly-sales-and-billing-report.jpg)
+1. 📥 Ingest Data into MySQL
+Raw data is ingested from multiple CSV files and loaded into a MySQL database, serving as the system's initial staging layer.
+
+2. 🔍 Transform Data with Pandas
+Leveraging the flexibility and power of Pandas, the raw datasets undergo cleansing, enrichment, and transformation to derive meaningful insights.
+
+3. 🪣 Store Transformed Data in MinIO
+The processed data is serialized and stored in MinIO object storage as the silver layer, enabling scalable and cost-efficient data architecture.
+
+4. 🏆 Load Gold-Layer Data into PostgreSQL
+High-quality, analysis-ready (gold layer) datasets are extracted from MinIO and loaded into a PostgreSQL database, ensuring efficient querying and analytics.
+
+5. 📊 Visualize Insights with Apache Superset
+Finally, the gold-layer data is visualized using Apache Superset, allowing stakeholders to explore dashboards and make data-driven decisions.
+
+6. 🔁 Orchestrate Workflow with Dagster
+Data workflows are orchestrated using Dagster, ensuring modular, maintainable, and observable pipelines with scheduled and event-driven triggers.
 
 
 
