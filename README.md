@@ -58,7 +58,7 @@ docker-compose up -d
 ```
 
 ### Usage
-1. 📥 Ingest Data into MySQL \\
+1. 📥 Ingest Data into MySQL \
 Raw data is ingested from multiple CSV files and loaded into a MySQL database, serving as the system's initial staging layer.
 
 2. 🔍 Transform Data with Pandas \
