@@ -38,24 +38,24 @@ in progess :smile:
 ### Setup
 
 1. Clone repo and navigate to project directory
-   ```bash  
-   git clone <repository-url>  
-   cd <project-folder>
-   ```
+```bash  
+git clone <repository-url>  
+cd <project-folder>
+```
 2. Create and activate a new Anaconda environment:
-   ```bash
-   conda create -n pyenv python=3.9+
-   conda activate pyenv
-   ```
+```bash
+conda create -n pyenv python=3.9+
+conda activate pyenv
+```
 3. Build required Docker images
-  ```bash
-  docker build -t de_dagster ./dagster/
-  docker build -t etl_pipeline:latest ./etl_pipeline
-  ```
+```bash
+docker build -t de_dagster ./dagster/
+docker build -t etl_pipeline:latest ./etl_pipeline
+```
 4. Start all services
-  ```bash
-  docker-compose up -d
-  ```
+```bash
+docker-compose up -d
+```
 
 ### Usage
 1. 📥 Ingest Data into MySQL
