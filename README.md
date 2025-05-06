@@ -61,19 +61,19 @@ docker-compose up -d
 1. 📥 Ingest Data into MySQL \\
 Raw data is ingested from multiple CSV files and loaded into a MySQL database, serving as the system's initial staging layer.
 
-2. 🔍 Transform Data with Pandas \\
+2. 🔍 Transform Data with Pandas \
 Leveraging the flexibility and power of Pandas, the raw datasets undergo cleansing, enrichment, and transformation to derive meaningful insights.
 
-3. 🪣 Store Transformed Data in MinIO \\
+3. 🪣 Store Transformed Data in MinIO \
 The processed data is serialized and stored in MinIO object storage as the silver layer, enabling scalable and cost-efficient data architecture.
 
-4. 🏆 Load Gold-Layer Data into PostgreSQL \\
+4. 🏆 Load Gold-Layer Data into PostgreSQL \
 High-quality, analysis-ready (gold layer) datasets are extracted from MinIO and loaded into a PostgreSQL database, ensuring efficient querying and analytics.
 
-5. 📊 Visualize Insights with Apache Superset \\
+5. 📊 Visualize Insights with Apache Superset \
 Finally, the gold-layer data is visualized using Apache Superset, allowing stakeholders to explore dashboards and make data-driven decisions.
 
-6. 🔁 Orchestrate Workflow with Dagster \\
+6. 🔁 Orchestrate Workflow with Dagster \
 Data workflows are orchestrated using Dagster, ensuring modular, maintainable, and observable pipelines with scheduled and event-driven triggers.
 
 
