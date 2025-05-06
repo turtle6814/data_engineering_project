@@ -42,27 +42,32 @@ To get a local copy up and running follow these simple example steps.
 - **Anaconda or Miniconda** for managing environments
 ### Setup
 
-# Clone repo and navigate to project directory
+1. Clone repo and navigate to project directory
    ```bash  
    git clone <repository-url>  
    cd <project-folder>
    ```
-# Create and activate a new Anaconda environment:
+2. Create and activate a new Anaconda environment:
    ```bash
    conda create -n pyenv python=3.9+
    conda activate pyenv
    ```
-# Build required Docker images
+3. Build required Docker images
   ```bash
-    docker build -t de_dagster ./dagster/
-    docker build -t etl_pipeline:latest ./etl_pipeline
+  docker build -t de_dagster ./dagster/
+  docker build -t etl_pipeline:latest ./etl_pipeline
   ```
-# Start all services
+4. Start all services
   ```bash
-    docker-compose up -d
+  docker-compose up -d
   ```
 
 ### Usage
+1. Load csv files to MySQL
+2. Perform orchestration using Dagster
+3. Transform the data using Pandas
+4. Transformed data will be store in MinIO
+![Storage](demo/monthly-sales-and-billing-report.jpg)
 
 
 
